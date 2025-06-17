@@ -48,12 +48,12 @@ public class PacienteAdapter extends RecyclerView.Adapter<PacienteAdapter.Pacien
     public void onBindViewHolder(@NonNull PacienteViewHolder holder, int position) {
         Paciente paciente = lista.get(position);
 
-        holder.txtNombre.setText("Nombre: " +paciente.nombre);
-        holder.txtDUI.setText("DUI: " + paciente.dui);
-        holder.txtTelefono.setText("Tel: " + paciente.telefono);
-        holder.txtEdad.setText("Edad: " + paciente.edad +" años");
-        holder.txtGenero.setText("Genero: " + paciente.genero );
-        holder.txtDireccion.setText("Dirección: " + paciente.direccion );
+        holder.txtNombre.setText(" Nombre: " +paciente.nombre);
+        holder.txtDUI.setText(" DUI: " + paciente.dui);
+        holder.txtTelefono.setText(" Tel: " + paciente.telefono);
+        holder.txtEdad.setText(" Edad: " + paciente.edad +" años");
+        holder.txtGenero.setText(" Genero: " + paciente.genero );
+        holder.txtDireccion.setText(" Dirección: " + paciente.direccion );
         holder.btnEditar.setOnClickListener(v -> {
             PacienteFormDialog dialog = new PacienteFormDialog(context, db, onChangeCallback, paciente);
             dialog.show();

@@ -4,6 +4,28 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:textViewStyle">@style/textview.subtitulo</item>
+        <item name="materialButtonStyle">@style/buttonPersonalizado</item>
+    </style>
+
+    <style name="textview.subtitulo" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontStyle">italic</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="buttonPersonalizado"
+        parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.buttonPersonalizado</item>
+    </style>
+
+    <style name="ShapeAppearance.buttonPersonalizado"
+        parent="ShapeAppearance.MaterialComponents.SmallComponent">
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerSize">16dp</item>
     </style>
 
     <style name="Theme.AppCitas" parent="Base.Theme.AppCitas" />

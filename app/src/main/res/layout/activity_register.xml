@@ -16,9 +16,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="56dp"
             android:text="Crear Cuenta"
-            android:textColor="@color/textPrimary"
             android:textSize="24sp"
-            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -42,7 +40,6 @@
             android:layout_marginStart="88dp"
             android:layout_marginTop="264dp"
             android:text="Nombre"
-            android:textColor="@android:color/black"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -66,7 +63,6 @@
             android:layout_marginStart="88dp"
             android:layout_marginTop="372dp"
             android:text="Correo Electrónico"
-            android:textColor="@android:color/black"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -91,7 +87,6 @@
             android:layout_marginStart="88dp"
             android:layout_marginTop="484dp"
             android:text="Contraseña"
-            android:textColor="@android:color/black"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -114,9 +109,7 @@
             android:layout_width="228dp"
             android:layout_height="53dp"
             android:layout_marginTop="52dp"
-            android:backgroundTint="@color/colorPrimary"
             android:text="📝 Registrar"
-            android:textColor="@android:color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
@@ -127,9 +120,7 @@
             android:layout_width="228dp"
             android:layout_height="53dp"
             android:layout_marginTop="15dp"
-            android:backgroundTint="@color/colorPrimary"
             android:text="↩️ Regresar"
-            android:textColor="@android:color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"

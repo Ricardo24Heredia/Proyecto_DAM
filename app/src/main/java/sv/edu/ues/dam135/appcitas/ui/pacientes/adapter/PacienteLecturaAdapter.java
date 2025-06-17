@@ -42,12 +42,12 @@ public class PacienteLecturaAdapter extends RecyclerView.Adapter<PacienteLectura
     public void onBindViewHolder(@NonNull PacienteViewHolder holder, int position) {
         Paciente paciente = lista.get(position);
 
-        holder.txtNombre.setText("Nombre: " + paciente.nombre);
-        holder.txtDUI.setText("DUI: " + paciente.dui);
-        holder.txtTelefono.setText("Tel: " + paciente.telefono);
-        holder.txtEdad.setText("Edad: " + paciente.edad + " años");
-        holder.txtGenero.setText("Género: " + paciente.genero);
-        holder.txtDireccion.setText("Dirección: " + paciente.direccion);
+        holder.txtNombre.setText(" Nombre: " + paciente.nombre);
+        holder.txtDUI.setText(" DUI: " + paciente.dui);
+        holder.txtTelefono.setText(" Tel: " + paciente.telefono);
+        holder.txtEdad.setText(" Edad: " + paciente.edad + " años");
+        holder.txtGenero.setText(" Género: " + paciente.genero);
+        holder.txtDireccion.setText(" Dirección: " + paciente.direccion);
     }
 
     @Override

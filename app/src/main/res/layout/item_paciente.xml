@@ -13,26 +13,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="#778DA9">
+        android:background="#99ccff">
 
         <TextView
             android:id="@+id/txtNombrePaciente"
             android:layout_width="370dp"
             android:layout_height="wrap_content"
             android:text="Nombre Completo del paciente"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textSize="18sp"/>
 
         <TextView
             android:id="@+id/txtDUIPaciente"
             android:layout_width="199dp"
             android:layout_height="wrap_content"
             android:text="DUI del paciente"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
+            android:textSize="18sp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -46,23 +41,26 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Tel del paciente"
-                android:textColor="#555555" />
+                android:textColor="#555555"
+                android:textSize="16sp"/>
 
             <TextView
                 android:id="@+id/txtEdadPaciente"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Edad del paciente"
-                android:textColor="#555555" />
+                android:text="Edad paciente"
+                android:textColor="#555555"
+                android:textSize="16sp"/>
 
             <TextView
                 android:id="@+id/txtGeneroPaciente"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Genero del paciente"
-                android:textColor="#555555" />
+                android:text="Genero paciente"
+                android:textColor="#555555"
+                android:textSize="16sp"/>
 
         </LinearLayout>
 
@@ -77,7 +75,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Dirección del paciente"
-                android:textColor="#555555" />
+                android:textColor="#555555"
+                android:textSize="16sp"/>
          </LinearLayout>
 
         <LinearLayout

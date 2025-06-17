@@ -48,12 +48,12 @@ public class DoctorAdapter extends RecyclerView.Adapter<DoctorAdapter.DoctorView
     public void onBindViewHolder(@NonNull DoctorViewHolder holder, int position) {
         Doctor doctor = lista.get(position);
 
-        holder.txtNombre.setText("Nombre: " +doctor.nombre);
-        holder.txtDUI.setText("DUI: " + doctor.dui);
-        holder.txtTelefono.setText("Tel: " + doctor.telefono);
-        holder.txtEdad.setText("Edad: " + doctor.edad +" años");
-        holder.txtEspecialidad.setText("Especialidad: " + doctor.especialidad );
-        holder.txtDireccion.setText("Dirección: " + doctor.direccion );
+        holder.txtNombre.setText(" Nombre: " +doctor.nombre);
+        holder.txtDUI.setText(" DUI: " + doctor.dui);
+        holder.txtTelefono.setText(" Tel: " + doctor.telefono);
+        holder.txtEdad.setText(" Edad: " + doctor.edad +" años");
+        holder.txtEspecialidad.setText(" Especialidad: " + doctor.especialidad );
+        holder.txtDireccion.setText(" Dirección: " + doctor.direccion );
         holder.btnEditar.setOnClickListener(v -> {
             DoctorFormDialog dialog = new DoctorFormDialog(context, db, onChangeCallback, doctor);
             dialog.show();

@@ -3,5 +3,21 @@
     <style name="Base.Theme.AppCitas" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="android:textViewStyle">@style/textviewNight.subtitulo</item>
+        <item name="materialButtonStyle">@style/buttonNightPersonalizado</item>
+
     </style>
+    <style name="textviewNight.subtitulo" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:fontStyle">italic</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="buttonNightPersonalizado" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:backgroundTint">@color/textSecondary</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.buttonPersonalizado</item>
+    </style>
+
 </resources>

@@ -42,15 +42,15 @@ public class CitaLecturaAdapter extends RecyclerView.Adapter<CitaLecturaAdapter.
     public void onBindViewHolder(@NonNull CitaViewHolder holder, int position) {
         Cita cita = lista.get(position);
 
-        holder.txtPaciente.setText("Paciente: " + cita.nombrePaciente);
-        holder.txtDUI.setText("DUI: " + cita.duiPaciente);
-        holder.txtDoctor.setText("Doctor: " + cita.nombreDoctor);
-        holder.txtEspecialidad.setText("Especialidad: " + cita.especialidad);
-        holder.txtFecha.setText("Fecha de la cita: " + cita.fecha);
-        holder.txtHora.setText("Hora de la cita: " + cita.hora);
-        holder.txtID.setText("N° Cita: " + cita.id);
-        holder.txtMotivo.setText("Motivo: " + cita.motivo);
-        holder.txtEstado.setText("Estado: " + cita.estado);
+        holder.txtPaciente.setText(" Paciente: " + cita.nombrePaciente);
+        holder.txtDUI.setText(" DUI: " + cita.duiPaciente);
+        holder.txtDoctor.setText(" Doctor: " + cita.nombreDoctor);
+        holder.txtEspecialidad.setText(" Especialidad: " + cita.especialidad);
+        holder.txtFecha.setText(" Fecha de la cita: " + cita.fecha);
+        holder.txtHora.setText(" Hora de la cita: " + cita.hora);
+        holder.txtID.setText(" N° Cita: " + cita.id);
+        holder.txtMotivo.setText(" Motivo: " + cita.motivo);
+        holder.txtEstado.setText(" Estado: " + cita.estado);
     }
 
     @Override
