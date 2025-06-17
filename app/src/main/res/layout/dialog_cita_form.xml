@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="16dp"
+    tools:context=".ui.citas.adapter.CitaAdapter">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutFormularioCita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtTituloFormulario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Formulario de Cita"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <!-- DUI -->
+        <TextView
+            android:id="@+id/labelDuiPaciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DUI del paciente:"
+            app:layout_constraintTop_toBottomOf="@id/txtTituloFormulario"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/edtDuiPaciente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Ej. 123456789"
+            android:inputType="number"
+            app:layout_constraintTop_toBottomOf="@id/labelDuiPaciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/labelNombrePaciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre del paciente:"
+            app:layout_constraintTop_toBottomOf="@id/edtDuiPaciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/edtNombrePaciente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Nombre completo"
+            android:inputType="textPersonName"
+            app:layout_constraintTop_toBottomOf="@id/labelNombrePaciente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/labelDoctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar doctor:"
+            app:layout_constraintTop_toBottomOf="@id/edtNombrePaciente"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerDoctor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/labelDoctor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/txtEspecialidadDoctor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Especialidad:"
+            android:padding="8dp"
+            app:layout_constraintTop_toBottomOf="@id/spinnerDoctor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/labelFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha de la cita:"
+            app:layout_constraintTop_toBottomOf="@id/txtEspecialidadDoctor"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/edtfechaCita"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Seleccionar fecha"
+            android:inputType="text"
+            android:focusable="false"
+            app:layout_constraintTop_toBottomOf="@id/labelFecha"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnimgFecha"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp" />
+
+        <ImageButton
+            android:id="@+id/btnimgFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Seleccionar fecha"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:srcCompat="@android:drawable/ic_menu_my_calendar"
+            app:layout_constraintTop_toTopOf="@+id/edtfechaCita"
+            app:layout_constraintBottom_toBottomOf="@+id/edtfechaCita"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/labelHora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hora de la cita:"
+            app:layout_constraintTop_toBottomOf="@id/edtfechaCita"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/edthoraCita"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Seleccionar hora"
+            android:inputType="text"
+            android:focusable="false"
+            app:layout_constraintTop_toBottomOf="@id/labelHora"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnimgHora"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp" />
+
+        <ImageButton
+            android:id="@+id/btnimgHora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Seleccionar hora"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:srcCompat="@android:drawable/ic_menu_recent_history"
+            app:layout_constraintTop_toTopOf="@+id/edthoraCita"
+            app:layout_constraintBottom_toBottomOf="@+id/edthoraCita"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/labelMotivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Motivo de la cita:"
+            app:layout_constraintTop_toBottomOf="@id/edthoraCita"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/edtMotivo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Describa el motivo"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:gravity="top"
+            app:layout_constraintTop_toBottomOf="@id/labelMotivo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/labelEstado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estado de la cita:"
+            app:layout_constraintTop_toBottomOf="@id/edtMotivo"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerEstado"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/labelEstado"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="4dp" />
+
+        <Button
+            android:id="@+id/btnCancelarCita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:backgroundTint="@color/colorPrimary"
+            app:layout_constraintTop_toBottomOf="@id/spinnerEstado"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="84dp"
+            android:layout_marginStart="52dp" />
+
+        <Button
+            android:id="@+id/btnGuardarCita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:backgroundTint="@color/colorPrimary"
+            app:layout_constraintTop_toBottomOf="@id/spinnerEstado"
+            app:layout_constraintStart_toEndOf="@id/btnCancelarCita"
+            android:layout_marginTop="84dp"
+            android:layout_marginStart="56dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+

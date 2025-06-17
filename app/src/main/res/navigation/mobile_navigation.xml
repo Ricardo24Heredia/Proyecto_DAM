@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="sv.edu.ues.dam135.appcitas.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="sv.edu.ues.dam135.appcitas.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="sv.edu.ues.dam135.appcitas.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_pacientes"
+        android:name="sv.edu.ues.dam135.appcitas.ui.pacientes.PacienteFragment"
+        android:label="Pacientes"
+        tools:layout="@layout/fragment_pacientes" />
+    <fragment
+        android:id="@+id/nav_doctores"
+        android:name="sv.edu.ues.dam135.appcitas.ui.doctores.DoctorFragment"
+        android:label="Doctores"
+        tools:layout="@layout/fragment_doctores" />
+    <fragment
+        android:id="@+id/nav_citas"
+        android:name="sv.edu.ues.dam135.appcitas.ui.citas.CitaFragment"
+        android:label="Citas"
+        tools:layout="@layout/fragment_citas" />
+    <fragment
+        android:id="@+id/nav_expediente"
+        android:name="sv.edu.ues.dam135.appcitas.ui.expediente.ExpedientePacienteFragment"
+        android:label="Expediente"
+        tools:layout="@layout/fragment_expediente_paciente" />
+</navigation>
