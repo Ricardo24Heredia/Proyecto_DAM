@@ -64,7 +64,7 @@ public class CitaAdapter extends RecyclerView.Adapter<CitaAdapter.CitaViewHolder
         });
 
         holder.btnEliminar.setOnClickListener(v -> {
-            new AlertDialog.Builder(context)
+            new AlertDialog.Builder(context, R.style.MyAlertDialogStyle)
                     .setTitle("Eliminar Cita")
                     .setMessage("¿Deseas eliminar esta cita?")
                     .setPositiveButton("Sí", (dialog, which) -> {

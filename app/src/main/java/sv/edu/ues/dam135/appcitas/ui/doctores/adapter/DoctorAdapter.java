@@ -60,7 +60,7 @@ public class DoctorAdapter extends RecyclerView.Adapter<DoctorAdapter.DoctorView
         });
 
         holder.btnEliminar.setOnClickListener(v -> {
-            new AlertDialog.Builder(context)
+            new AlertDialog.Builder(context, R.style.MyAlertDialogStyle)
                     .setTitle("Eliminar")
                     .setMessage("¿Deseas eliminar este doctor?")
                     .setPositiveButton("Sí", (dialog, which) -> {

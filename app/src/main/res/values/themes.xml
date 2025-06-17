@@ -28,6 +28,12 @@
     <item name="cornerSize">16dp</item>
     </style>
 
+    <style name="MyAlertDialogStyle" parent="Theme.MaterialComponents.Dialog.Alert">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/blanco</item>
+        <item name="android:textColorPrimary">@color/blanco</item>
+    </style>
+
     <style name="Theme.AppCitas" parent="Base.Theme.AppCitas" />
 
     <style name="Theme.AppCitas.NoActionBar">
