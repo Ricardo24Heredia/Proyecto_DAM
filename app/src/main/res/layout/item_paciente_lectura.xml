@@ -20,14 +20,14 @@
             android:layout_width="370dp"
             android:layout_height="wrap_content"
             android:text="Nombre Completo del paciente"
-            android:textSize="18sp"/>
+            android:textSize="17sp"/>
 
         <TextView
             android:id="@+id/txtDUIPaciente"
             android:layout_width="199dp"
             android:layout_height="wrap_content"
             android:text="DUI del paciente"
-            android:textSize="18sp"/>
+            android:textSize="17sp"/>
 
 
         <LinearLayout
@@ -42,8 +42,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Tel del paciente"
-                android:textColor="#555555"
-                android:textSize="16sp" />
+                android:textColor="@color/text_gray"
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/txtEdadPaciente"
@@ -51,8 +51,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Edad"
-                android:textColor="#555555"
-                android:textSize="16sp" />
+                android:textColor="@color/text_gray"
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/txtGeneroPaciente"
@@ -60,8 +60,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Genero paciente"
-                android:textColor="#555555"
-                android:textSize="16sp" />
+                android:textColor="@color/text_gray"
+                android:textSize="15sp" />
 
         </LinearLayout>
 
@@ -76,8 +76,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Dirección del paciente"
-                android:textColor="#555555"
-                android:textSize="16sp"/>
+                android:textColor="@color/text_gray"
+                android:textSize="15sp"/>
         </LinearLayout>
 
     </LinearLayout>

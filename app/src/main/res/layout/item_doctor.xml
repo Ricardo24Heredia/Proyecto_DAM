@@ -20,8 +20,7 @@
             android:layout_width="370dp"
             android:layout_height="wrap_content"
             android:text="Nombre Completo del doctor"
-            android:textColor="#000000"
-            android:textSize="18sp"
+            android:textSize="17sp"
             android:textStyle="bold" />
 
         <TextView
@@ -29,8 +28,7 @@
             android:layout_width="199dp"
             android:layout_height="wrap_content"
             android:text="DUI del doctor"
-            android:textColor="#000000"
-            android:textSize="18sp"
+            android:textSize="17sp"
             android:textStyle="bold" />
 
         <TextView
@@ -38,9 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Especialidad del doctor"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textSize="17sp"/>
 
 
         <LinearLayout
@@ -55,7 +51,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Tel del doctor"
-                android:textColor="#555555" />
+                android:textColor="@color/text_gray"
+                android:textSize="15sp"/>
 
             <TextView
                 android:id="@+id/txtEdadDoctor"
@@ -63,7 +60,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Edad del doctor"
-                android:textColor="#555555" />
+                android:textColor="@color/text_gray"
+                android:textSize="15sp"/>
 
         </LinearLayout>
 
@@ -78,7 +76,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Dirección del doctor"
-                android:textColor="#555555" />
+                android:textColor="@color/text_gray"
+                android:textSize="15sp"/>
         </LinearLayout>
 
         <LinearLayout

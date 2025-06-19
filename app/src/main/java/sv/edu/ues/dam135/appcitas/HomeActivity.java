@@ -1,5 +1,7 @@
 package sv.edu.ues.dam135.appcitas;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -68,11 +70,27 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        if (id == R.id.menu_exit) {
+        if (id == R.id.menu_Salir) {
             finishAffinity();
             System.exit(0);
             return true;
         }
+
+        if (id == R.id.menu_cerrar) {
+
+            SharedPreferences preferences = getSharedPreferences("sesion", MODE_PRIVATE);
+            SharedPreferences.Editor editor = preferences.edit();
+            editor.clear();
+            editor.apply();
+
+            Intent intent = new Intent(this, LoginActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
+            finish();
+
+            return true;
+        }
+
         return super.onOptionsItemSelected(item);
     }
 }

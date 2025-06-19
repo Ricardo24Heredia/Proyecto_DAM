@@ -25,16 +25,16 @@
 
         <TextView
             android:id="@+id/txttitle"
-            android:layout_width="293dp"
-            android:layout_height="28dp"
+            android:layout_width="201dp"
+            android:layout_height="40dp"
             android:layout_marginStart="92dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="28dp"
             android:layout_marginEnd="82dp"
+            android:gravity="center"
             android:text="Formulario de Registro de Paciente"
             android:textSize="18sp"
-            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.613"
+            app:layout_constraintHorizontal_bias="0.39"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/logo" />
 
@@ -44,7 +44,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:text="Nombre Completo"
-            android:textStyle="bold"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -69,7 +68,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="DUI"
-            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/etNombre" />
@@ -93,7 +91,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="Edad"
-            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/etDUI" />
@@ -118,7 +115,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="Género"
-            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/etEdad" />
@@ -141,7 +137,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="Teléfono"
-            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/spGenero" />
@@ -166,7 +161,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="Dirección"
-            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/etTelefono" />

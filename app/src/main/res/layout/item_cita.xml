@@ -21,27 +21,21 @@
             android:layout_height="wrap_content"
             android:autoLink="all"
             android:text="@string/comprobante_cita"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textSize="18sp"/>
 
         <TextView
             android:id="@+id/txtNombrePaciente"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Nombre Paciente"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textSize="18sp"/>
 
         <TextView
             android:id="@+id/txtDUIPaciente"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="DUI Paciente"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textSize="18sp"/>
 
 
         <LinearLayout
@@ -56,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Nombre del doctor"
-                android:textColor="#555555" />
+                android:textColor="@color/text_gray"/>
 
         </LinearLayout>
 
@@ -71,7 +65,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Especialidad del doctor"
-                android:textColor="#555555" />
+                android:textColor="@color/text_gray" />
         </LinearLayout>
 
         <LinearLayout
@@ -85,7 +79,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Fecha Cita"
-                android:textColor="#555555" />
+                android:textColor="@color/text_gray" />
         </LinearLayout>
 
         <LinearLayout
@@ -99,7 +93,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Hora Cita"
-                android:textColor="#555555" />
+                android:textColor="@color/text_gray"/>
         </LinearLayout>
 
         <LinearLayout
@@ -113,7 +107,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Numero Cita"
-                android:textColor="#555555" />
+                android:textColor="@color/text_gray"/>
         </LinearLayout>
 
         <LinearLayout
@@ -127,7 +121,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Motivo Cita"
-                android:textColor="#555555" />
+                android:textColor="@color/text_gray"/>
         </LinearLayout>
 
         <LinearLayout
@@ -141,7 +135,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Estado Cita"
-                android:textColor="#555555" />
+                android:textColor="@color/text_gray"/>
         </LinearLayout>
 
         <LinearLayout
