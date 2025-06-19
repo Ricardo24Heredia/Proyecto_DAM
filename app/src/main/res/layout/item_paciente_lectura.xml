@@ -54,14 +54,22 @@
                 android:textColor="@color/text_gray"
                 android:textSize="15sp" />
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp">
+
             <TextView
                 android:id="@+id/txtGeneroPaciente"
-                android:layout_width="79dp"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Genero paciente"
                 android:textColor="@color/text_gray"
-                android:textSize="15sp" />
+                android:textSize="15sp"/>
 
         </LinearLayout>
 

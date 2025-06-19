@@ -25,8 +25,8 @@
 
         <TextView
             android:id="@+id/txttitle"
-            android:layout_width="201dp"
-            android:layout_height="40dp"
+            android:layout_width="199dp"
+            android:layout_height="48dp"
             android:layout_marginStart="92dp"
             android:layout_marginTop="28dp"
             android:layout_marginEnd="82dp"
@@ -181,23 +181,25 @@
             android:id="@+id/btnCancelarCita"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="72dp"
+            android:layout_marginEnd="8dp"
             android:layout_marginTop="84dp"
             android:backgroundTint="@color/colorPrimary"
             android:text="Cancelar"
+            app:layout_constraintTop_toBottomOf="@id/etDireccion"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/etDireccion" />
+            app:layout_constraintEnd_toStartOf="@id/btnGuardarCita" />
 
         <Button
             android:id="@+id/btnGuardarCita"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="56dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="84dp"
-            android:text="Guardar"
             android:backgroundTint="@color/colorPrimary"
+            android:text="Guardar"
+            app:layout_constraintTop_toBottomOf="@id/etDireccion"
             app:layout_constraintStart_toEndOf="@id/btnCancelarCita"
-            app:layout_constraintTop_toBottomOf="@id/etDireccion" />
+            app:layout_constraintEnd_toEndOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
