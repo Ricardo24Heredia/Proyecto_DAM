@@ -63,8 +63,8 @@ public class PacienteFormDialog {
         Spinner spGenero = view.findViewById(R.id.spGenero);
         EditText etTelefono = view.findViewById(R.id.etTelefono);
         EditText etDireccion = view.findViewById(R.id.etDireccion);
-        Button btnGuardar = view.findViewById(R.id.btnGuardarCita);
-        Button btnCancelar = view.findViewById(R.id.btnCancelarCita);
+        Button btnGuardar = view.findViewById(R.id.btnGuardarPaciente);
+        Button btnCancelar = view.findViewById(R.id.btnCancelarPaciente);
 
         ArrayAdapter<CharSequence> adapterGenero = ArrayAdapter.createFromResource(
                 context,
