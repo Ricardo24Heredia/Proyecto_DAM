@@ -6,12 +6,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
+import java.util.concurrent.Executors;
 
 import sv.edu.ues.dam135.appcitas.R;
 import sv.edu.ues.dam135.appcitas.data.AppDatabase;
@@ -60,16 +62,26 @@ public class PacienteAdapter extends RecyclerView.Adapter<PacienteAdapter.Pacien
         });
 
         holder.btnEliminar.setOnClickListener(v -> {
-            new AlertDialog.Builder(context, R.style.MyAlertDialogStyle)
+            new AlertDialog.Builder(v.getContext(), R.style.MyAlertDialogStyle)
                     .setTitle("Eliminar")
                     .setMessage("¿Deseas eliminar este paciente?")
                     .setPositiveButton("Sí", (dialog, which) -> {
-                        db.pacienteDao().eliminar(paciente);
-                        onChangeCallback.run();
+                        Executors.newSingleThreadExecutor().execute(() -> {
+                            int citasAsociadas = db.citaDao().contarCitasPorDuiPaciente(paciente.dui);
+                            if (citasAsociadas > 0) {
+                                holder.itemView.post(() ->
+                                        Toast.makeText(v.getContext(), "No se puede eliminar, tiene citas registradas.", Toast.LENGTH_LONG).show()
+                                );
+                            } else {
+                                db.pacienteDao().eliminar(paciente);
+                                holder.itemView.post(onChangeCallback);
+                            }
+                        });
                     })
                     .setNegativeButton("Cancelar", null)
                     .show();
         });
+
     }
 
     @Override

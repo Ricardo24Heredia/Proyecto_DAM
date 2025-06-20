@@ -25,4 +25,10 @@ public interface CitaDao {
     @Query("SELECT * FROM citas WHERE dui_paciente = :dui")
     List<Cita> obtenerCitasPorDui(String dui);
 
+    @Query("SELECT COUNT(*) FROM citas WHERE dui_paciente = :dui")
+    int contarCitasPorDuiPaciente(String dui);
+
+    @Query("SELECT COUNT(*) FROM citas WHERE id_doctor = :idDoctor")
+    int contarCitasPorDoctor(int idDoctor);
+
 }

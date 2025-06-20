@@ -1,6 +1,7 @@
 package sv.edu.ues.dam135.appcitas.ui.citas.adapter;
 
 import android.content.Context;
+import android.os.Looper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,8 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
+import java.util.concurrent.Executors;
+import java.util.logging.Handler;
 
 import sv.edu.ues.dam135.appcitas.R;
 import sv.edu.ues.dam135.appcitas.data.AppDatabase;
@@ -64,12 +67,14 @@ public class CitaAdapter extends RecyclerView.Adapter<CitaAdapter.CitaViewHolder
         });
 
         holder.btnEliminar.setOnClickListener(v -> {
-            new AlertDialog.Builder(context, R.style.MyAlertDialogStyle)
+            new AlertDialog.Builder(v.getContext(), R.style.MyAlertDialogStyle)
                     .setTitle("Eliminar Cita")
                     .setMessage("¿Deseas eliminar esta cita?")
                     .setPositiveButton("Sí", (dialog, which) -> {
-                        db.citaDao().eliminar(cita);
-                        onActualizar.run();
+                        Executors.newSingleThreadExecutor().execute(() -> {
+                            db.citaDao().eliminar(cita);
+                            holder.itemView.post(onActualizar);
+                        });
                     })
                     .setNegativeButton("No", null)
                     .show();
